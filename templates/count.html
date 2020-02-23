@@ -1,0 +1,19 @@
+<a href= "{% url 'home' %}">Go Back</a>
+
+<h1>COUNT</h1>
+<h2>there are {{ lenofwords }} words in your text</h2>
+
+<h2>You entered:</h2>
+{{ allthetext }}
+<br />
+<br />
+<h2>
+{% for word, counttotal in sortedwords %}
+
+
+{{ word }}
+
+{{ counttotal }}
+<br />
+{% endfor %}
+</h2>
